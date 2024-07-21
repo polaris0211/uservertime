@@ -14,8 +14,9 @@ export const global = createGlobalTheme(":root", {
     micro: "14px",
   },
   fontWeight: {
+    light: "200",
     normal: "400",
-    large: "700",
+    large: "800",
   },
   color: {
     primary: "#405D72",
@@ -53,4 +54,6 @@ export const darkTheme = createTheme(themeColor, {
 export const vars = { ...global, themeColor };
 globalStyle("body", {
   backgroundColor: `hsl(${vars.themeColor.color.mainBackground})`,
+  height: "100vh",
+  width: "100vw",
 });
